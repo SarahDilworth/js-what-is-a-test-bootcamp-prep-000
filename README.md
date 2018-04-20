@@ -13,7 +13,7 @@ var message = `${name} is ${height} inches tall`
 
 module.exports = {name, height, message}
 ```
-
+console.log(message)
 This should look familiar except for that third line: `` var message = `${name} is ${height} inches tall` ``. It's actually pretty cool what that line does. Explore what ends up in the `message` variable by typing `console.log(message)` on the last line and then run your `index.js` file. You should see `"Joe is 74 inches tall"`. Pretty cool right? If you create a string wrapping it in back-ticks (`` ` ``) you can then use your variables directly in the string to create a sentence like
 we just did. The key is when you use a variable you have to wrap the variable itself in the `${` and `}`. If you were to modify `message` to look like this: `` var message = `name is height inches tall` ``, and run your code again you'd get `"name is height inches tall"`. That's not what you want! The `${` and `}` tell Javascript to grab the value inside the variable, not just that variable name. 
 
@@ -90,4 +90,3 @@ This one has two `expect` statements. If you read them out as English you'll dis
 OK Great. You now understand what the tests are saying. Let's run our tests and submit our code to learn. In the terminal first type `learn`. You should get a message saying `0 passing` and the local build light will turn green. Then to submit your code up, type `learn submit` in the terminal. You should be good to go forward now! In the next lesson we are going to cover how to run them, and then have you actually solve the lab! 
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-what-is-a-test'>What Is A Test</a> on Learn.co and start learning to code for free.</p>
-console.log(message)
